@@ -8,6 +8,6 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-    - uses: actions/chckout@v4
+    - uses: actions/chckout@v2
       with:
           repo-token: ${{ secrets.GIT_TOKEN }}
