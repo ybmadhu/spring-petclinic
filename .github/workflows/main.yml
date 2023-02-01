@@ -5,15 +5,16 @@ on:
     branches:
     - dev
 jobs:
-  build:
+  sonarqube:
+    name: SonarQube Trigger
     runs-on: self-hosted
     steps:
     - name: Checking out
-      uses: actions/checkout@v2
+      uses: actions/checkout@dev
+      with:
+        fetch-depth: 0
     - name: SonarQube Scan
-      uses: sonarsource/sonarqube-scan-action@v2
+      uses: kitabisa/sonarqube-action@v1.2.0
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
-        projectBaseDir: "src/"
-        projectKey: "java-sonar-runner-simple"
