@@ -1,7 +1,7 @@
 name: workflow for PR
 
 on:
-  pull_request:
+  push:
     branches:
     - dev
 jobs:
