@@ -3,7 +3,7 @@ name: workflow for PR
 on:
   pull_request:
     branches:
-    - master
+    - dev
 jobs:
   build:
     runs-on: self-hosted
