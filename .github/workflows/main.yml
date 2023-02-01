@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
     - name: Checking out
-      uses: actions/checkout@dev
+      uses: actions/checkout@v2
       with:
         fetch-depth: 0
     - name: SonarQube Scan
