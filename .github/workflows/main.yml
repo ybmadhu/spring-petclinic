@@ -9,4 +9,4 @@ jobs:
     runs-on: self-hosted
     steps:
     - name: Checking out
-      uses: actions/chckout@v2
+      uses: actions/chckout@dev
