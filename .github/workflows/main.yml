@@ -3,10 +3,10 @@ name: workflow for PR
 on:
   push:
     branches:
-    - dev
+    - master
 jobs:
   build:
     runs-on: self-hosted
     steps:
-    - name: checking single line
-      run: echo Niranjan DevOps
+    - name: Checking out
+      uses: actions/chckout@v2
