@@ -9,4 +9,4 @@ jobs:
     runs-on: self-hosted
     steps:
     - name: checking single line
-      run: echo Niranjan
+      run: echo Niranjan DevOps
