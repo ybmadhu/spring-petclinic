@@ -11,10 +11,13 @@ jobs:
     
     steps:
     - name: trigger Job
-      uses: NiranjanRS/spring-petclinic@stg
+      uses: mickeygoussetorg/trigger-jenkins-job@v1
       with:
         jenkins-server:  "https://jenkins.quinnox.info"
         jenkins-job: "stg-githubactions-job"
         jenkins-username: "admin" 
-        jenkins-pat: ${{ secrets.JENKINS_PAT }} 
+        jenkins-pat: ${{ secrets.JENKINS_PAT }}
+        poll-time: 10 # how often to poll the jenkins server for results
+        timeout-value: 600 # How long to poll before timing out the action
+        verbose: true 
         
