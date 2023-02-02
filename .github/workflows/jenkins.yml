@@ -10,12 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: curl
-      uses: wei/curl@v1
-      with:
-        args: -X POST https://httpbin.org/post
     - name: trigger Job
-      uses: mickeygoussetorg/trigger-jenkins-job@v1
+      uses: NiranjanRS/spring-petclinic@stg
       with:
         jenkins-server:  "https://jenkins.quinnox.info"
         jenkins-job: "stg-githubactions-job"
