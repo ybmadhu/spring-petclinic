@@ -11,5 +11,9 @@ jobs:
     
     steps:
     - name: trigger Job
-      run: curl -X POST -u admin:kG8zt8dmP666G5Ca https://jenkins.quinnox.info/jenkins/view/Staging-Service-Deployments/job/stg-githubactions-job/
-
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "https://jenkins.quinnox.info"
+        user: "admin"
+        token: "1180651654575c70df7a3174d0716be6fe"
+        job: "stg-githubactions-job"
