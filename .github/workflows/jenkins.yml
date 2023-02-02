@@ -17,5 +17,3 @@ jobs:
         job_name: "stg-githubactions-job"
         user_name: "admin"
         api_token: ${{ secrets.JEN_TOKEN }}
-        wait: "true"
-        timeout: "1000"
