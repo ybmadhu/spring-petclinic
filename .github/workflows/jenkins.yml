@@ -11,5 +11,5 @@ jobs:
     
     steps:
     - name: get crumb
-      run: curl -s -u "admin:kG8zt8dmP666G5Ca" https://jenkins.quinnox.info'/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)'
+      run: curl -X POST -u admin:kG8zt8dmP666G5Ca https://jenkins.quinnox.info/jenkins/view/Staging-Service-Deployments/job/stg-githubactions-job/build?token=1234567
   
