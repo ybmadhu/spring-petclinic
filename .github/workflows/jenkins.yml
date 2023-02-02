@@ -11,4 +11,4 @@ jobs:
     
     steps:
     - name: trigger Job
-      run: curl -X POST -u admin:kG8zt8dmP666G5Ca https://jenkins.quinnox.info/job/stg-githubactions-job/build?token=1180651654575c70df7a3174d0716be6fe
+      run: curl -X POST -u admin:kG8zt8dmP666G5Ca https://jenkins.quinnox.info/jenkins/job/stg-githubactions-job/build?token=1180651654575c70df7a3174d0716be6fe
