@@ -11,9 +11,11 @@ jobs:
     
     steps:
     - name: trigger Job
-      uses: appleboy/jenkins-action@master
+      uses: jabbukka/jenkins-trigger@main
       with:
         url: "https://jenkins.quinnox.info"
-        user: "admin"
-        token: ${{ secrets.JEN_TOKEN }}
-        job: "stg-githubactions-job"
+        job_name: "stg-githubactions-job"
+        user_name: "admin"
+        api_token: ${{ secrets.JEN_TOKEN }}
+        wait: "true"
+        timeout: "1000"
