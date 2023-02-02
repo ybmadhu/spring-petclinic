@@ -17,6 +17,4 @@ jobs:
         jenkins-job: "stg-githubactions-job"
         jenkins-username: "admin" 
         jenkins-pat: ${{ secrets.JENKINS_PAT }} 
-        poll-time: 10 
-        timeout-value: 600
-        verbose: true
+        
