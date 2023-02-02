@@ -11,5 +11,5 @@ jobs:
     
     steps:
     - name: trigger job
-      run: curl -u -v  admin:kG8zt8dmP666G5Ca https://jenkins.quinnox.info/jenkins/view/Staging-Service-Deployments/job/stg-githubactions-job/build?token=1234567
+      run: curl -X POST -u admin:1180651654575c70df7a3174d0716be6fe https://jenkins.quinnox.info/jenkins/job/stg-githubactions-job/build
   
