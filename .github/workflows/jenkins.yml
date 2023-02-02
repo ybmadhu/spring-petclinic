@@ -11,7 +11,7 @@ jobs:
     
     steps:
     - name: trigger single Job
-      uses: admin/jenkins-action@master
+      uses: mickeygoussetorg/trigger-jenkins-job@v1
       with:
         url: "https://jenkins.quinnox.info"
         user: "admin"
