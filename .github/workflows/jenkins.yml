@@ -11,7 +11,7 @@ jobs:
     
     steps:
     - name: trigger single Job
-      uses: appleboy/jenkins-action@master
+      uses: admin/jenkins-action@master
       with:
         url: "https://jenkins.quinnox.info"
         user: "admin"
