@@ -11,9 +11,9 @@ jobs:
     
     steps:
     - name: trigger Job
-      uses: GoldenspearLLC/build-jenkins-job@master
+      uses: appleboy/jenkins-action@master
       with:
-        jenkins-url: "https://jenkins.quinnox.info"
-        jenkins-token: ${{ secrets.JEN_TOKEN }}
+        url: "https://jenkins.quinnox.info"
         user: "admin"
-        job-path: "/jenkins/view/Staging-Service-Deployments/stg-githubactions-job"
+        token: "1180651654575c70df7a3174d0716be6fe"
+        job: "stg-githubactions-job"
