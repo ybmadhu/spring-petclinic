@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: trigger single Job
-      uses: appleboy/jenkins-action@master
+      uses: admin/jenkins-action@v2
       with:
         url: "https://jenkins.quinnox.info/"
         user: "admin"
