@@ -1,10 +1,13 @@
 name: workflow for jenkins trigger
 
 on:
-  if: github.event.pull_request.merged == true
+  pull_request:
+    branches:
+    - stg
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
     steps:
     - name: trigger single Job
       uses: admin/jenkins-action@v2
