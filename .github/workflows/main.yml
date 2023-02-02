@@ -8,7 +8,7 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: delivery-much/actions-assigner@v1
+      - uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
         with:
           token: ${{ secrets.GIT_TOKEN }}
           reviewers: mummina naidu
