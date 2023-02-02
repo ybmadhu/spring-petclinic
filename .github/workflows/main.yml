@@ -11,4 +11,4 @@ jobs:
       - uses: delivery-much/actions-assigner@v1
         with:
           token: ${{ secrets.GIT_TOKEN }}
-          reviewers: mummina naidu
+          reviewers: Nooruppu
