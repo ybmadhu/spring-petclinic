@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
     - stg
+    types: [closed]
 jobs:
   build:
     runs-on: ubuntu-latest
