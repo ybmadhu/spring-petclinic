@@ -11,9 +11,9 @@ jobs:
     
     steps:
     - name: trigger Job
-      uses: jabbukka/jenkins-trigger@main
+      uses: GoldenspearLLC/build-jenkins-job@master
       with:
-        url: "https://jenkins.quinnox.info"
-        job_name: "stg-githubactions-job"
-        user_name: "admin"
-        api_token: ${{ secrets.JEN_TOKEN }}
+        jenkins-url: "https://jenkins.quinnox.info"
+        jenkins-token: ${{ secrets.JEN_TOKEN }}
+        user: "admin"
+        job-path: "/jenkins/view/Staging-Service-Deployments/stg-githubactions-job"
