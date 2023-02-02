@@ -5,10 +5,10 @@ on:
     branches:
     - stg
 jobs:
-  assign:
+  review:
     runs-on: ubuntu-latest
     steps:
       - uses: delivery-much/actions-assigner@v1
         with:
           token: ${{ secrets.GIT_TOKEN }}
-          reviewers: NiranjanRS
+          reviewers: mummina naidu
