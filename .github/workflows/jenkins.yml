@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: get crumb
-      run: curl -X POST -u admin:kG8zt8dmP666G5Ca https://jenkins.quinnox.info/jenkins/view/Staging-Service-Deployments/job/stg-githubactions-job/build?token=1234567
+    - name: trigger job
+      run: curl -u -v  admin:kG8zt8dmP666G5Ca https://jenkins.quinnox.info/jenkins/view/Staging-Service-Deployments/job/stg-githubactions-job/build?token=1234567
   
