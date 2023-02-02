@@ -11,12 +11,9 @@ jobs:
     
     steps:
     - name: trigger Job
-      uses: mickeygoussetorg/trigger-jenkins-job@v1
+      uses: appleboy/jenkins-action@master
       with:
-        jenkins-server:  "https://jenkins.quinnox.info"
-        jenkins-job: "stg-githubactions-job"
-        jenkins-username: "admin" 
-        jenkins-pat: ${{ secrets.JENKINS_PAT }}
-        poll-time: 10
-        timeout-value: 600
-        verbose: true 
+        url: "https://jenkins.quinnox.info"
+        user: "admin"
+        token: ${{ secrets.JEN_TOKEN }}
+        job: "stg-githubactions-job"
