@@ -1,17 +1,17 @@
 name: workflow for jenkins trigger
 
 on:
-  pull_request:
+  push:
     branches:
     - stg
-    types: [closed]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
     - name: trigger single Job
-      uses: appleboy/jenkins-action@master
+      uses: appleboy/jenkins-action@stg
       with:
         url: "https://jenkins.quinnox.info/"
         user: "admin"
