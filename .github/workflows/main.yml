@@ -3,10 +3,12 @@ name: workflow for PR
 on:
   pull_request:
     branches:
-    - master
+    - stg
 jobs:
-  build:
-    runs-on: self-hosted
+  assign:
+    runs-on: ubuntu-latest
     steps:
-    - name: checking single line
-      run: echo Niranjan
+      - uses: delivery-much/actions-assigner@v1
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          reviewers: NiranjanRS
