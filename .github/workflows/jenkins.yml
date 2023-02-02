@@ -1,0 +1,15 @@
+name: workflow for jenkins trigger
+
+on:
+  if: github.event.pull_request.merged == true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "https://jenkins.quinnox.info/"
+        user: "admin"
+        token: ${{ secrets.JEN_TOKEN }}
+        job: "stg-githubactions-job"
