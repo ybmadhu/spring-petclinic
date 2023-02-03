@@ -1,0 +1,15 @@
+name: workflow for jenkins trigger
+
+on:
+  pull_request:
+    branches:
+    - stg
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: trigger job
+      run: curl -X POST -u admin:1180651654575c70df7a3174d0716be6fe https://jenkins.quinnox.info/jenkins/job/stg-githubactions-job/build
+  

@@ -1,0 +1,14 @@
+name: workflow for PR
+
+on:
+  pull_request:
+    branches:
+    - stg
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: delivery-much/actions-assigner@v1
+        with:
+          token: ${{ secrets.GIT_TOKEN }}
+          reviewers: Nooruppu
