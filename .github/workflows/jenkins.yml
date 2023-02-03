@@ -3,7 +3,7 @@ name: workflow for jenkins trigger
 on:
   push:
     branches:
-    - stg
+    - dev
     
 jobs:
   build:
